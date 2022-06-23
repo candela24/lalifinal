@@ -1,0 +1,258 @@
+@font-face {
+    font-family: Pangolin;
+    src: url(https://fonts.googleapis.com/css2?family=Pangolin&family=Raleway:wght@100&family=Rampart+One&family=Roboto:wght@100&display=swap);
+}
+body {
+    overflow-x: hidden;
+}
+
+.fondo1 img{
+    position: absolute;
+    width: 100%;
+}
+.celu{
+    display: none;
+}
+.icono{
+    display: none;
+}
+.nave{
+    display: none;
+}
+.logo img{
+    width: 10%;
+    position: relative;
+    top: 50px;
+}
+.row{ flex-wrap: nowrap;
+
+}
+
+.redes a{
+    color: black;
+    font-size: 50px;
+    position: relative;
+    top:200px
+}
+.inicio{
+    font-family: 'Pangolin', cursive;
+    width: 40%;
+}
+
+.inicio a{
+    font-family: "Pangolin";
+    position: relative;
+    top: 100px;
+    font-size: 50px;
+
+}
+.inicio a:hover {
+    text-decoration: underline;
+}
+
+.fondo2 img{
+    width: 75%;
+    position: absolute;
+    left: 25%;
+}
+
+.boton{
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    width: 40%;
+    opacity: 70%;
+    border: 3px solid black;
+    
+}
+
+.content1{
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    width: 100%;
+    left: 500px;
+   
+    
+}
+.uno:hover{
+    transform: scale(1.15);
+    background-color:black;
+    color: white;
+}
+.dos:hover{
+    transform: scale(1.15);
+    background-color:black;
+    color: white;
+}
+.tres:hover{
+    transform: scale(1.15);
+    background-color:black;
+    color: white;
+}
+button{
+    border: none;
+    width: 60%;
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+button a{
+    text-decoration: none;
+    color:white
+    
+}
+button a:hover{
+    color: red;
+}
+
+.titulo{
+    font-family: 'Pangolin', cursive;
+    margin: auto;
+    margin-top: -23%;
+    left: 5%;
+    width: 80%;
+    animation-name: anicolor;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+
+}
+
+
+form {
+    font-family: 'Roboto', sans-serif;
+    width:40%; 
+    margin: auto; 
+    margin-top: 5%;
+    border: 3px solid rgb(0, 0, 0);
+    padding:10px;   
+}
+
+form label{
+   width: 60%; 
+   height: 100%; 
+   font-weight:bold;
+   color: rgb(0, 0, 0); 
+   padding: 10px;
+
+ }
+
+form input{ 
+ padding: 6px; 
+ border:2px inherit #272626; 
+ width: 100%;
+}
+
+.boton2{
+background-color:black;
+border: none;
+width: 50%;
+color: white;
+font-size: 20px;
+position: relative;
+left: 25%;
+}
+.boton2:hover{
+  transform: scale(1.15);
+   background-color:black;
+   color: white;
+   cursor: pointer;
+}
+
+@keyframes animacion{
+    100%{transform: scale(1,1);}
+    50%{transform: scale(1.5,1.5);}
+    0%{transform: scale(1,1);}
+}
+
+
+
+@media(min-width:600px) and (max-width:990px){
+    form{width: 50%;
+        margin-left: 40%;
+        margin-top: 5%;}
+        form label{width: 50%; }
+        form input{ padding: 4px;border: 1px solid; width: 100%}
+
+        .fondo2{
+            position: relative;
+            top: 20%;
+            width: 150%;
+            left: 0%;
+        }
+        .boton {
+            margin-top: 0%;
+             left: 70%;
+             width: 40%;
+             
+         }
+        .titulo{
+            left: -8%;
+        }
+}
+
+
+ @media only screen and (max-width: 600px) {
+    
+    .icono{font-size: 40px ; color:black;display: block; position:absolute; top: 30px; left: 13px;}
+    .icono :hover{color:#272626;}
+    nav{ z-index:10;position: absolute;width: 100%;background-color:rgba(0, 0, 0, 0.771);display: none;margin:0px;}
+    nav a {display: flex; margin:0px 0; width: 100%; color: white;font-size: 25px;padding:15px;text-decoration: none;}
+    nav a:hover{
+        color: #ada9a9;
+        text-decoration: underline;
+    }
+    .menucelular{display: block;top: 50px;}
+
+.titulo{
+   margin-top: 30%;
+   left: -13%;
+   
+
+}
+.active{
+    color: red;
+}
+.logo{
+    position: relative;
+    width: 140%;
+    left: 55%;
+    top: -7%;
+}
+.fondo1{
+    display: none;
+}
+.inicio{
+    display: none;
+}
+
+.celu{
+    display:flex;
+}
+.celu img{
+    width: 80%;
+    position: absolute;
+    top: 15%;
+}
+
+.content1{
+   position: absolute;
+   margin-top: 40%;
+   left: 5%;
+    width: 70%;
+}
+.fondo2{
+    position: relative;
+    top: 200%;
+    width: 260%;
+    right: 70%;
+}
+.boton {
+   margin-top: 80%;
+    left: 50%;
+    width: 80%;
+}
+
+form{width: 80%;
+    margin-top: 30%;}
+    form label{width: 50%; }
+	form input{ padding: 4px;border: 1px solid; width: 100%}
+}
