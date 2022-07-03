@@ -156,6 +156,21 @@ left: 25%;
    color: white;
    cursor: pointer;
 }
+.formulario{
+    font-size: 80px;
+    position: relative;
+    left: 40%;
+    width: 50%;
+    top: -40%;
+     padding: 10px; margin: 10px 0;}
+
+.titulo{
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    background-color: #e430339a;
+}
 
 @keyframes animacion{
     100%{transform: scale(1,1);}
